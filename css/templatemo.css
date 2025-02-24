@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  background: url('../img/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.white{
+  color: white;
+}
+
+.titulo{
+  color: #007bff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-section h1 {
+  margin: 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.profile-section p {
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  color: #eaeaea;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.download-cv {
+  border: 1px solid #eaeaea;
+  padding: 5px 10px;
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 0.875rem; /* Tamaño de letra más pequeño */
+}
+
+.download-cv:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.language-select {
+  text-align: right; /* Alinea el select a la derecha */
+  margin-bottom: 20px; /* Ajusta el margen inferior si es necesario */
+}
+
+.language-select select {
+  display: inline-block;
+  width: auto; /* Ajusta el ancho del select según el contenido */
+}
+
+/* DISPONIBLE */
+
+/* Disponible Section */
+.disponible-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.disponible-box {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #e0f7e9;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+}
+
+.disponible-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.disponible-text {
+  font-weight: bold;
+  color: #4caf50;
+}
+  
+
+/* FIN DISPONIBLE */
+
+/* Sections */
+.about-section, .experience-section, .education-section, .projects-section {
+  margin-bottom: 2rem;
+  background: transparent;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Experience Items */
+.experience-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.experience-details p {
+  margin: 0.25rem 0;
+  color: #eaeaea;
+}
+
+
+/* PROYECTOS */
+
+.projects-section {
+  margin: 0 auto;
+  max-width: 1200px; /* Ajusta este valor según tu diseño */
+}
+
+.projects-section h2 {
+  margin-bottom: 2rem;
+  text-align: left; /* Alinea el título a la izquierda */
+}
+
+.project-item {
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  width: calc(50% - 1rem); /* Ajusta el ancho para permitir el espacio entre tarjetas */
+  text-align: center;
+  display: inline-block; /* Asegura que las tarjetas se alineen en línea */
+  vertical-align: top; /* Alinea las tarjetas verticalmente */
+  position: relative; /* Necesario para posicionar la galería */
+}
+
+.image-gallery {
+  position: relative;
+}
+
+.main-image-wrapper {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: 200px; /* Ajusta la altura para mantener la uniformidad */
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+  transition: opacity 0.3s;
+}
+
+.hover-images-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hover-images {
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.hover-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+  min-width: 100%;
+}
+
+.project-item:hover .hover-images-wrapper {
+  opacity: 1;
+}
+
+.project-item:hover .main-image {
+  opacity: 0;
+}
+
+
+
+
+/* FIN PROYECTOS */
+
+
+
+/* Skills */
+
+.skills-section {
+  margin: 0 auto;
+  max-width: 1200px; /* Ajusta este valor según tu diseño */
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.skill-item {
+  position: relative;
+  width: 100px; /* Ajusta el tamaño del contenedor según sea necesario */
+  height: 100px; /* Ajusta el tamaño del contenedor según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-logo {
+  max-width: 80px; /* Ajusta el tamaño del logo */
+  max-height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-text {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.skill-item:hover .skill-text {
+  display: block;
+}
+
+.skill-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skill-item span {
+  border: 2px solid #007bff; /* Borde redondeado para los textos sin logotipos */
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+/* FIN SKILLS */
+
+
+/* EDUCACION */
+
+
+
+/* FIN EDUCACION */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-photo img {
+      margin-top: 1rem;
+  }
+
+  .experience-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .experience-item img {
+      margin-bottom: 1rem;
+  }
+
+  .experience-details {
+      text-align: center;
+  }
+
+  .projects-section {
+      flex-direction: column;
+  }
+
+  .project-item {
+      width: 100%;
+  }
+}
+
+
+/*IDIOMA*/
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre los elementos de idioma */
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Tamaño del texto */
+}
+
+.language-item i {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  font-size: 24px; /* Tamaño del icono */
+}
+
+
+
+/*IDIOMA*/
