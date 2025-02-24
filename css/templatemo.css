@@ -89,6 +89,22 @@ body {
   width: auto; /* Ajusta el ancho del select según el contenido */
 }
 
+.styled-select {
+  appearance: none; /* Elimina el estilo por defecto del navegador */
+  -webkit-appearance: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+  -moz-appearance: none; /* Para Firefox */
+  background-color: #007bff;
+  border: 2px solid #0b223b;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 40px 10px 20px; /* Ajusta el padding */
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 250px; /* Ancho fijo o ajustable según necesidad */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 /* DISPONIBLE */
 
 /* Disponible Section */
@@ -207,7 +223,7 @@ li {
 
 .main-image {
   width: 100%;
-  height: 200px; /* Ajusta la altura para mantener la uniformidad */
+  height: 300px; /* Ajusta la altura para mantener la uniformidad */
   object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
   transition: opacity 0.3s;
 }
@@ -241,6 +257,27 @@ li {
 
 .project-item:hover .main-image {
   opacity: 0;
+}
+
+/* Oculta los proyectos adicionales por defecto */
+.hidden-projects {
+  display: none;
+}
+
+/* Centrar el botón Mostrar más */
+.show-more {
+  display: block;
+  margin: 20px auto; /* Esto centra el botón horizontalmente */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.show-more:hover {
+  background-color: #4d60cc;
 }
 
 
